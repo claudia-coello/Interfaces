@@ -208,3 +208,28 @@ nav a.login{
 .card button:hover{
     background-color: #008f88;
 }
+.descarga{
+    display: flex;
+    flex-wrap: wrap;  
+    align-items: center; 
+    gap: 60px;
+    padding: 80px 10%;
+}
+.descarga-content{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+}
+.descarga-img img{
+    width: 300px;
+    max-width: 100%;
+}
+.icon-descarga img{
+    width: 150px;
+    cursor: pointer;
+}
+.icon-descarga {
+    display: inline-block;         /* Hace que los íconos estén uno al lado del otro */
+    margin: 10px;
+}
