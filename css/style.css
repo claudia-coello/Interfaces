@@ -79,26 +79,41 @@ nav a{
 nav a.login{
     color: #00b2a9;
 }
-.hero{
+.hero {
     background-color: #1b2a38;
     color: white;
-    padding: 60px 10%;
-    text-align: left;
-}
-.hero-content{
+    padding: 80px 10%;
+    margin: 0;
+    min-height: 100vh; /* Pantalla completa */
     display: flex;
-    flex-wrap: wrap;/**/
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
 }
-.hero-text h1{/*cambia en h1 solo a esa clase*/
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10%;
+    gap: 50px;
+    flex: 1;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
     font-size: 2.5rem;
     line-height: 1.3;
 }
-.hero-text span{
+
+.hero-text span {
     color: #00b2a9;
 }
-.hero-text button{
+
+.hero-text button {
     margin-top: 20px;
     background-color: #00b2a9;
     color: white;
@@ -108,10 +123,25 @@ nav a.login{
     cursor: pointer;
     font-weight: 600;
 }
-.hero-text button:hover{/*cambia el color del boton cuando esta seleccionado*/
+
+.hero-text button:hover {
     background-color: #008f88;
 }
-.features{
+
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-img img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/* Sección de características */
+.features {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -119,30 +149,46 @@ nav a.login{
     flex-wrap: wrap;
     margin: 20px 0;
 }
-.feature{
+
+.feature {
     display: flex;
     align-items: center;
     gap: 10px;
     flex: 1 1 200px;
     margin: 10px 0;
 }
-.feature img{
+
+.feature img {
     width: 50px;
     height: auto;
 }
-.feature span{
+
+.feature p {
     font-size: 16px;
 }
-@media (max-width: 600px) {
-    .feature{
-        flex-direction: column;
+
+/* Adaptación móvil */
+@media (max-width: 768px) {
+    .hero{
         align-items: center;
+
+    }
+    .hero-content {
+        flex-direction: column;
         text-align: center;
     }
-    .feature img{
-        margin-bottom: 10px;
+
+    .hero-img img {
+        max-width: 300px;
+        margin-top: 20px;
+    }
+    .feature{
+        width: 50px;
+        height: auto;
+        display: inline;
     }
 }
+
 .about{
     display: flex;
     flex-wrap: wrap;
@@ -243,6 +289,7 @@ nav a.login{
     display: inline-block;         /* Hace que los íconos estén uno al lado del otro */
     margin: 10px;
 }
+
 .container-gallery{
     background-color: #1b2a38;
     color: white;
@@ -345,11 +392,33 @@ footer .realizado {
 .contact-form{
     background-color: #b8c3cc;
     border-radius: 10px;
-    width: 500px;
+    width: 50%;
+    text-align: left;
 }
 .contact-map{
     display: flex;
     margin: 10px;
+}
+.map iframe{
+    height: 100%;
+    width: 100%;
+}
+@media(max-width: 768px) {
+    .contact-map{
+        height: 100%;
+        width: 100%;
+        display: inline;
+        text-align: center;
+    }
+    .contact-form{
+        align-items: center;
+    }
+    .contact-form{
+        background-color: #b8c3cc;
+        border-radius: 10px;
+        width: 100%;
+        text-align: left;
+    }
 }
 .conteiner-login{
     display: flex;
