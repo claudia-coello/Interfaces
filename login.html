@@ -1,0 +1,96 @@
+<!-- La página web tendrá las siguiente ventanas: 
+inicio nosotros, servicios, App, conatcto, login.
+- En cada ventana aumenta algo más de acuerdo a tu 
+imaginación
+-  En el login debes diseñar un formulario para inicio 
+de sesión y además, dos link: con Olvidaste tu contraseña 
+"Recupérala"  y  Aún no te has registardo "Registro aquí"-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Electro<span><strong>Station</strong>
+        </div>
+
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+        <i class="fa-solid fa-bars"></i><!--icono o cursiva-->
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="services.html">Servicios</a></li>
+                <li><a href="app.html">App</a></li>
+                <li><a href="gallery.html">Galeria</a></li>
+                <li><a href="contactos.html">Contacto</a></li>
+                <li><a href="login.html" class="login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="conteiner-login">
+
+        <div class="login-form">
+
+            <h1>Iniciar Sesion</h1>
+            <hr>
+            <form>
+                <label>Ingresa tu Usuario</label>
+                <input type="text" required placeholder="Usuario">
+                <br><label>Ingresa tu Contraseña</label>
+                <input type="password" required placeholder="Contraseña">
+                <div class="login-recuperacion">
+                    <br><label>Recordarme</label>
+                    <input type="checkbox">
+                    <br>
+                    <br><a href="">Olvide mi contraseña</a>
+                    <a href="#">¿Aún no tienes cuenta? <strong>Regístrate aquí</strong></a>
+                </div>
+                
+                <br><button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="img-login">
+            <img src="images/img-login.jpg">
+        </div>
+        
+    </div>    
+    <br>                                                                                                          
+    <footer>
+        <hr>
+        <div class="content">
+            <div class="siguenos">
+                <h1>Siguenos en redes</h1>
+                <img class="fc" src="images\facebook.png" >
+                <img class="tw" src="images\twitter.png">
+                <img class="in" src="images\in.png">
+            </div>
+            <div class="enlaces">
+                <h1>Enlaces de interes</h1>
+                <h1>Soporte tecnico</h1>
+                <h1>Preguntas Frecuentes</h1>
+            </div>
+            <div class="llamanos">
+                <h1>Llamanos</h1>
+                <p>+593 000 0000</p>
+                <h1>Escribenos</h1>
+                <p>Preguntas Frecuentes</p>
+            </div>
+        </div>
+        
+        <!--Enlace de interes-->
+        <div class="realizado">
+            <p>Realizado por: Claudia Coello</p>
+        </div>
+    </footer>
+    
+</body>                 
+</html>
