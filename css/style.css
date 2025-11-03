@@ -1,7 +1,6 @@
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
-    color: #222;
     background-color: white;
     cursor: url('../images/auto-cursor.cur'), auto;
 }
@@ -11,16 +10,20 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    background-color: rgb(253, 245, 222);
+    background-color: #1b2a38;
     box-shadow: 0 2px 10px rgba(206, 199, 199, 0.1);
     position: sticky;
     top: 0;
     border-bottom: 1px solid #00b2a9;
     z-index: 100;/*coloca por encima de otros elemento*/
+    position: relative;
+    overflow: hidden;
+    color: white;
 }
 .logo span{
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
+    font-weight: bold;
 }
 .logo strong{
     color: #00b2a9;
@@ -42,6 +45,7 @@ nav ul{
     gap: 25px;
     margin: 0;
     padding: 0;
+
 }
 /*vista movil*/
 @media (max-width: 900px) {
@@ -73,15 +77,13 @@ nav ul{
 
 nav a{
     text-decoration: none;
-    color: #222;
+    color: #ffffff;
     font-weight: 500;
 }
 nav a.login{
     color: #00b2a9;
 }
 .hero {
-    background-color: #1b2a38;
-    color: white;
     padding: 80px 10%;
     margin: 0;
     min-height: 100vh; /* Pantalla completa */
@@ -161,6 +163,7 @@ nav a.login{
 .feature img {
     width: 50px;
     height: auto;
+    
 }
 
 .feature p {
@@ -207,17 +210,12 @@ nav a.login{
     border-radius: 8px;
 }
 .services{
-    background-color: #1b2a38;
-    color: white;
     text-align: center;
     padding: 80px 10%;
 }
 .services h2{
     font-size: 2rem;
     margin-bottom: 10px;
-}
-.services p{
-    color: #b8c3cc;
 }
 .services-cards{
     display: flex;
@@ -227,8 +225,8 @@ nav a.login{
     margin-top: 40px;
 }
 .card{
-    background-color: white;
-    color: #222;
+    background-color: #1b2a38;
+    color: #ffffff;
     border-radius: 10px;
     overflow: hidden;
     width: 300px;
@@ -245,18 +243,7 @@ nav a.login{
     font-size: 1rem;
     height: 100px;
 }
-.card button{
-    margin: 15px;
-    background-color: #00b2a9;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.card button:hover{
-    background-color: #008f88;
-}
+
 .descarga{
     display:flex;
     flex-wrap: wrap;  
@@ -275,6 +262,7 @@ nav a.login{
 .descarga-img img{
     width: 300px;
     max-width: 100%;
+    border-radius: 40px;
 }
 
 .descarga-text {
@@ -291,8 +279,6 @@ nav a.login{
 }
 
 .container-gallery{
-    background-color: #1b2a38;
-    color: white;
     text-align: center;
     padding: 80px 10%;
 }
@@ -313,7 +299,6 @@ nav a.login{
     overflow: hidden;
     animation: scrollHorizontal 20s linear infinite;
     align-items: center;
-    background-color: #1b2a38;
     text-align: center;
     padding: 80px 10%;
 }
@@ -324,7 +309,7 @@ nav a.login{
     flex-shrink: 0;
     border-radius: 20px;
     overflow: hidden;
-    position: relative;      /* por si quieres texto encima en el futuro */
+    position: relative;      
 }
 
 .carousel-item img {
@@ -332,6 +317,7 @@ nav a.login{
     height: 100%;
     object-fit: cover;       /* ocupa todo el bloque sin deformarse */
     display: block;
+    z-index: -100;
 }
 
 @keyframes scrollHorizontal {
@@ -350,15 +336,13 @@ nav a.login{
         width: 100px;
         height: 100px;
     }
-
-    /* 🔧 Animación vertical corregida */
     @keyframes scrollVertical {
         from { transform: translateY(0); }
         to { transform: translateY(-100%); }
     }
 }
 footer {
-    background-color: #222;
+    background-color: #1b2a38;
     color: white;
     padding: 20px;
     font-size: 10px;
